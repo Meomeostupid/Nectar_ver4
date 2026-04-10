@@ -22,6 +22,8 @@ import FavoriteScreen from './screens/FavoriteScreen';
 import SearchScreen from './screens/SearchScreen';
 import FilterScreen from './screens/FilterScreen';
 import AccountScreen from './screens/AccountScreen'; // Đảm bảo bạn đã tạo file này
+import OrderResultScreen from './screens/OrderResultScreen';
+import OrderFailedScreen from './screens/OrderFailedScreen';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -94,6 +96,8 @@ export default function App() {
         <Stack.Screen name="Beverages" component={BeveragesScreen} /> 
         <Stack.Screen name="Search" component={SearchScreen} />
         <Stack.Screen name="Filters" component={FilterScreen} />
+        <Stack.Screen name="OrderResult" component={OrderResultScreen} />
+        <Stack.Screen name="OrderFailed" component={OrderFailedScreen} />
 
       </Stack.Navigator>
     </NavigationContainer>
